@@ -22,3 +22,6 @@ script:
    - drunner install drunner/dtest
    - dtest test
    - dtest test drunner/helloworld
+
+after_success:
+   - bash build upload
