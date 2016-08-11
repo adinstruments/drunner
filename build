@@ -152,12 +152,12 @@ function main {
 
       upload)
       # relies on S3KEY and S3SECRET environ vars
-         putS3 "${MYDIR}/source/drunner" "/lin/drunner"
+         putS3 "${MYDIR}/output/drunner-install" "/drunner-install"
 
-         s3supportpath="${MYDIR}/.s3supportfiles"
-         for file in "$s3supportpath"/*; do
-            putS3 "$s3supportpath/${file##*/}" "/lin/${file##*/}"
-         done
+         # s3supportpath="${MYDIR}/.s3supportfiles"
+         # for file in "$s3supportpath"/*; do
+         #    putS3 "$s3supportpath/${file##*/}" "/lin/${file##*/}"
+         # done
          ;;
 
       *)

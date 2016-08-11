@@ -1,10 +1,6 @@
 language: cpp
 sudo: required
 dist: trusty
-addons:
-  artifacts:
-    paths:
-      - output/drunner-install
 before_install:
    - sudo apt-get -qq update
    - sudo apt-get install -qq build-essential g++-multilib libboost-all-dev libyaml-cpp-dev
@@ -26,3 +22,6 @@ script:
    - drunner install drunner/dtest
    - dtest test
    - dtest test drunner/helloworld
+
+after_success:
+   - bash build upload
