@@ -33,7 +33,7 @@ TEST_CASE("basic settings work","[settingsbash]")
    {
       sb.setString("ROOTPATH","/home/j");
       sb.setString("ROOTUTILIMAGE","drunner/rootutils");
-      sb.setString("DRUNNERINSTALLURL",R"EOF(https://drunner.s3.amazonaws.com/drunner-install)EOF");
+      sb.setString("DRUNNERINSTALLURL",R"EOF(https://adi-drunner.s3.amazonaws.com/drunner-install)EOF");
       sb.setString("DRUNNERINSTALLTIME",utils::getTime());
       sb.setBool("PULLIMAGES",true);
 

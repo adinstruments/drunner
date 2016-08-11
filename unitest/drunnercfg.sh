@@ -4,6 +4,6 @@
 
 ROOTPATH=/home/j/dev/drunnerc/unitest
 ROOTUTILIMAGE=drunner/install-rootutils
-DRUNNERINSTALLURL=https://drunner.s3.amazonaws.com/drunner-install
+DRUNNERINSTALLURL=https://adi-drunner.s3.amazonaws.com/drunner-install
 DRUNNERINSTALLTIME=Wed Mar  9 22:02:45 2016
 PULLIMAGES=yes
