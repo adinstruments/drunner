@@ -156,7 +156,7 @@ function main {
 
          s3supportpath="${MYDIR}/.s3supportfiles"
          for file in "$s3supportpath"/*; do
-            putS3 "$s3supportpath/${file##*/}" "/lin/${file##*/}"
+            putS3 "$s3supportpath/${file##*/}" "/${file##*/}"
          done
          ;;
 
